@@ -1,0 +1,221 @@
+/*Estilos generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    background-color: #010102;
+}
+
+h1{
+    color: #ffff;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+h2{ 
+    color: #ffff;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.remarcar{
+    color: #3693AC;
+}
+
+.parrafo{
+    color: #ffff;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*Estilo header*/
+header{
+    background-color: #010102;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+header img{
+    width: 153px;
+    height: 60px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffff;
+}
+
+header nav ul li a:hover{
+    color: #3693AC;
+    font-size: 15px;
+}
+
+/*Estilo main index*/
+.foto-index{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-index img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    border: 3px dotted #3693AC;
+}
+
+/*Estilo main Sobre Mi*/
+.contenedor-aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-aboutme img{
+    width: 360px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 3px dotted #3693AC;
+}
+
+/*Estilo main Certificados*/
+.contenedor-certificados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.contenedor-imagen img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*Estilo main Proyectos*/
+h3{
+    font-size: 20px;
+    text-align: center;
+    color: #ffff;
+    padding: 15px;
+}
+
+.enlace-proyecto{
+    text-decoration: none;
+}
+
+.enlace-proyecto h2:hover{
+    color: #3693AC;
+    font-size: 20px;
+}
+
+
+/*Estilo main contacto y formulario*/
+.contenedor-bootstrap{
+    width: 600px;
+}
+
+.etiqueta-contacto{
+    color: #ffff;
+}
+
+.boton-enviar{
+    background-color: #ffff;
+    color: #010102;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 0px 30px;
+}
+
+.boton-enviar:hover{
+    color: #3693AC;
+    border: 3px dotted #3693AC;
+}
+
+/*Estilo footer*/
+footer div{
+    background-color: #010102;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px
+}
+
+div a img{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    /*Header*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /*Estilo main Sobre mi*/
+    .contenedor-aboutme{
+        flex-direction: column;
+    }
+
+    .contenedor-aboutme img{
+        width: 80%;
+        height: auto;
+    }
+
+    /*Estilo main Certificados*/
+    .contenedor-certificados{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Estilo main Contacto*/
+    .contenedor-bootstrap{
+        width: 80%;
+    }
+
+}
