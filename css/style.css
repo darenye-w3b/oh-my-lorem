@@ -11,7 +11,7 @@ html{
 
 main{
     background-color: #010102;
-    height: 100%;
+    min-height: 600px;
 }
 
 h1{
@@ -30,6 +30,10 @@ h2{
     font-family: 'Montserrat', sans-serif;
 }
 
+h2:hover{
+    transform: scale(1.2, 1.2);
+}
+
 .remarcar{
     color: #3693AC;
     font-family: 'Montserrat', sans-serif;
@@ -39,6 +43,7 @@ h2{
     color: #ffff;
     text-align: center;
     font-weight: 300;
+    padding: 5px;
 }
 
 .titulo-bootstrap{
@@ -61,6 +66,16 @@ header{
 header img{
     width: 153px;
     height: 60px;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes logo{
+    50%{
+        transform: translateX(50px);
+    }
 }
 
 header nav ul{
@@ -101,6 +116,10 @@ header nav ul li a:hover{
     border: 3px dotted #3693AC;
 }
 
+.foto-index img:hover{
+    transform: scale(1.1, 1.1);
+}
+
 /*Estilo main Sobre Mi*/
 .contenedor-aboutme{
     display: flex;
@@ -115,6 +134,10 @@ header nav ul li a:hover{
     margin: 10px;
     border-radius: 30px;
     border: 3px dotted #3693AC;
+}
+
+.contenedor-aboutme img:hover{
+    transform: scale(1.1, 1.1);
 }
 
 /*Estilo main Certificados*/
@@ -141,7 +164,7 @@ header nav ul li a:hover{
 }
 
 /*Estilo main Proyectos*/
-h3{
+h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -149,11 +172,14 @@ h3{
     padding: 15px;
 }
 
-.enlace-proyecto{
+.enlace-proyecto h3{
+    color: #ffff;
+    text-align: center;
     text-decoration: none;
+    padding: 5px;
 }
 
-.enlace-proyecto h2:hover{
+.enlace-proyecto h3:hover{
     color: #3693AC;
     font-size: 20px;
 }
