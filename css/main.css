@@ -1,3 +1,244 @@
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
+/*Estilos Generales*/
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: #010102;
+  min-height: 600px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.remarcar {
+  color: #3693AC;
+  font-family: "Montserrat", sans-serif;
+}
+
+.parrafo {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.titulo-bootstrap {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*Estilos de header*/
+header {
+  background-color: #010102;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+header img {
+  width: 153px;
+  height: 60px;
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+header nav ul li a:hover {
+  color: #3693AC;
+  font-size: 15px;
+}
+header.header-afectado-por-bootstrap nav ul li a {
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes logo {
+  50% {
+    transform: translateX(50px);
+  }
+}
+/*Estilo Main Index*/
+section .foto-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section .foto-index img {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  border: 3px dotted #3693AC;
+}
+
+/*Estilo Main Sobre Mi*/
+section .contenedor-aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .contenedor-aboutme img {
+  width: 360px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 3px dotted #3693AC;
+}
+
+/*Estilo Main Certificados*/
+section .contenedor-certificados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+section .contenedor-certificados .contenedor-parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+section .contenedor-certificados .contenedor-parrafo .contenedor-imagen img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*Estilo Main Proyectos*/
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+section #carouselExample .carousel-inner .enlace-proyecto h3 {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*Estilo Main Contacto*/
+section .contenedor-bootstrap {
+  width: 600px;
+}
+section .contenedor-bootstrap div .etiqueta-contacto {
+  color: white;
+}
+section div .boton-enviar {
+  background-color: white;
+  color: #010102;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 0px 30px;
+}
+section div .boton-enviar:hover {
+  color: #3693AC;
+  border: 3px dotted #3693AC;
+}
+
+/*Estilo Footer*/
+footer div {
+  background-color: #010102;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+footer div a img {
+  width: 35px;
+  height: 35px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+  /*Header*/
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  header.header-afectado-por-bootstrap {
+    line-height: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+  header.header-afectado-por-bootstrap nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  /*Estilo Main Sobre-mi*/
+  section .contenedor-aboutme {
+    flex-direction: column;
+  }
+  section .contenedor-aboutme img {
+    width: 80%;
+    height: auto;
+  }
+  /*Estilo Main Certificados*/
+  section .contenedor-certificados {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Estilo Main Contacto*/
+  section .contenedor-bootstrap {
+    width: 80%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

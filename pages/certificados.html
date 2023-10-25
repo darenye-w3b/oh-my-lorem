@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/style.css">
+    <!-- SEO -->
+    <meta name="keywords" content="Aprendizaje, Certificados, Cursos Desarrollo Web, Tecnología, JavaScript">
+    <meta name="description" content="Aprendizajes obtenidos durante el camino del Desarrollo Web y BackEnd">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- Ícono -->
     <link rel="icon" href="./../assets/logo-icon.svg">
+    <!-- CSS/SASS -->
+    <link rel="stylesheet" href="./../css/main.css">
     <title>Certificados</title>
 </head>
 <body>
@@ -38,28 +46,28 @@
         <section>
             <h1>Certificados</h1>
             <div class="contenedor-certificados">
-                <div class="contenedor-parrafo">
+                <div class="contenedor-parrafo" data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h2 class="remarcar">HTML</h2>
                     <p class="parrafo">En el curso de HTML, adquirí un sólido dominio que me permite  crear estructuras web sólidas y bien organizadas, permitiendo que la información se presente de manera efectiva en un sitio web. Aprendí a diseñar páginas web atractivas y funcionales, utilizando etiquetas semánticas e indentando correctamente el código.</p>
                     <div class="contenedor-imagen">
                         <img src="./../assets/html-logo.svg" alt="Logo HTML">
                     </div>
                 </div>
-                <div class="contenedor-parrafo">
+                <div class="contenedor-parrafo" data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h2>CSS</h2>
                     <p class="parrafo">Después de completar el curso de CSS, soy capaz de diseñar sitios web visualmente atractivos y personalizados. Aprendí a dar estilo y formato a las páginas web, controlando el aspecto y la presentación de los elementos, lo que me permite crear sitios web con una apariencia única y atractiva.</p>
                     <div class="contenedor-imagen"> 
                         <img src="./../assets/css-logo.svg" alt="Logo CSS">
                     </div>
                     </div>
-                <div class="contenedor-parrafo">
+                <div class="contenedor-parrafo" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h2>JavaScript</h2>
                     <p class="parrafo">En el curso de JavaScript, aprendí los fundamentos y cómo usarlos para dar vida a un sitio web. Aprendí a desarrollar componentes del front-end, lo que me permite construir un sitio web impresionante con una interfaz de usuario atractiva y funcional.</p>
                     <div class="contenedor-imagen">
                         <img src="./../assets/javascript-logo.svg" alt="Logo JavaScript">
                     </div>
                 </div>
-                <div class="contenedor-parrafo">
+                <div class="contenedor-parrafo" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <h2 class="remarcar">React Js</h2>
                     <p class="parrafo">En el curso de React Js, tuve la oportunidad de adentrarme en el emocionante mundo de la creación de interfaces de usuario altamente dinámicas y eficientes. Aprendí a desarrollar aplicaciones de una sola página de manera efectiva, lo que me permite ofrecer a los usuarios una experiencia de navegación fluida y enriquecedora.</p>
                     <div class="contenedor-imagen">
@@ -77,5 +85,10 @@
             <a href="https://github.com/darenye-w3b" target="_blank"><img src="./../assets/github-icon.svg" alt="Logo Github"></a>
         </div>
     </footer>
+    <!-- Librería AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

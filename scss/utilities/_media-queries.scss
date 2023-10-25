@@ -1,0 +1,48 @@
+/*Media Queries*/
+@media screen and (max-width: 768px){
+/*Header*/
+header{
+    @include flex(column, center, space-between);
+    padding: map-get($layout-parameters, padding-primario);
+    nav{
+        ul{
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    &.header-afectado-por-bootstrap{
+        line-height: 18px;
+        font-family: 'Montserrat', sans-serif;
+        nav{
+            ul{
+                @include flex(column, center, space-between);
+                padding: map-get($layout-parameters, padding-reseteo);
+                margin: map-get($layout-parameters, margin-reseteo);
+            }
+        }
+    }
+}
+/*Estilo Main Sobre-mi*/
+section{
+    .contenedor-aboutme{
+        flex-direction: column;
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+/*Estilo Main Certificados*/
+section{
+    .contenedor-certificados{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*Estilo Main Contacto*/
+section{
+    .contenedor-bootstrap{
+        width: 80%;
+    }
+}
+}

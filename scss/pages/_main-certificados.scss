@@ -1,0 +1,21 @@
+/*Estilo Main Certificados*/
+section{
+    .contenedor-certificados{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        .contenedor-parrafo{
+            @include flex(column, center, center);
+            padding: 5px 10px;
+            .contenedor-imagen{
+                img{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 20px;
+                    padding: map-get($layout-parameters, padding-primario);
+                }
+        }
+        }
+    }
+}

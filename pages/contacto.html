@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="Contacto, Trabajo, Diseño Web, Formulario, Trabajo en Equipo">
+    <meta name="description" content="Página de contacto para trabajar en futuros proyectos juntos">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./../css/style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Ícono -->
     <link rel="icon" href="./../assets/logo-icon.svg">
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- CSS/SASS -->
+    <link rel="stylesheet" href="./../css/main.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -37,17 +46,17 @@
 
     <main>
         <section>
-            <h1 class="titulo-bootstrap">Contáctame y <span class="remarcar">trabajemos juntos!</span></h1>
+            <h1 class="titulo-bootstrap" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500">Contáctame y <span class="remarcar">trabajemos juntos!</span></h1>
             <article class="container contenedor-bootstrap">
-                <div class="mb-3">
+                <div class="mb-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                     <label for="exampleFormControlInput1" class="form-label etiqueta-contacto">Tu correo</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="daremartinezd@gmail.com">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                     <label for="exampleFormControlTextarea1" class="form-label etiqueta-contacto">Tu mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Hola! Me gustaría que trabajemos juntos porque considero que seríamos un buen equipo!"></textarea>
                 </div>
-                <div>
+                <div data-aos="zoom-in-down">
                     <input type="submit" value="Enviar" class="boton-enviar">
                 </div>
             </article>
@@ -62,5 +71,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

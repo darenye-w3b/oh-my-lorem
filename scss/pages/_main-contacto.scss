@@ -1,0 +1,27 @@
+/*Estilo Main Contacto*/
+section{
+    .contenedor-bootstrap{
+        width: 600px;
+        div{
+            .etiqueta-contacto{
+                color: $color-terciario;
+            }
+        }
+    }
+    div{
+        .boton-enviar{
+            background-color: $color-terciario;
+            color: $color-principal;
+            font-weight: bold;
+            width: 100px;
+            height: 50px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 0px 30px;
+            &:hover{
+                color: $color-secundario;
+                border: 3px dotted $color-secundario;
+            }
+        }
+    }
+}

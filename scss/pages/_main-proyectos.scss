@@ -1,0 +1,22 @@
+/*Estilo Main Proyectos*/
+section{
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: map-get($layout-parameters, textalign-primario);
+        color: $color-terciario;
+        padding: 15px;
+    }
+    #carouselExample{
+        .carousel-inner{
+            .enlace-proyecto{
+                h3{
+                    color: $color-terciario;
+                    text-align: map-get($layout-parameters, textalign-primario);
+                    text-decoration: none;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

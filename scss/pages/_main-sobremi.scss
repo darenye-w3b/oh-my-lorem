@@ -1,0 +1,13 @@
+/*Estilo Main Sobre Mi*/
+section{
+    .contenedor-aboutme{
+        @include flex(column, center, center);
+        img{
+            width: 360px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 30px;
+            border: 3px dotted $color-secundario;
+        }
+    }
+}

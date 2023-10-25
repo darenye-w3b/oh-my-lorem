@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/style.css">
+    <!-- SEO -->
+    <meta name="keywords" content="Sobre mi, Oh My Lorem!, Creador de Contenido, Cambio de rubro, Desafíos">
+    <meta name="description" content="Un poco de información sobre mi, con algunos de mis proyectos, sueños y objetivos a realizar como Desarrolladora Web">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Ícono -->
     <link rel="icon" href="./../assets/logo-icon.svg">
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- CSS/SASS -->
+    <link rel="stylesheet" href="./../css/main.css">
     <title>Sobre mi</title>
 </head>
 <body>
@@ -36,15 +44,15 @@
 
     <main>
         <section>
-            <h1>Sobre Mi</h1>
-            <div class="contenedor-aboutme">
+            <h1 data-aos="zoom-in">Sobre Mi</h1>
+            <div class="contenedor-aboutme" data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <img src="./../assets/sobre-mi.jpeg" alt="Retrato sobre mi">
                 <p class="parrafo">¡Hola! Soy Darenye Martínez, una apasionada de la tecnología con un espíritu inquieto y un deseo insaciable de explorar el mundo. A mis 25 años, tengo el título de <span class="remarcar">Tourism and Hospitality Manager</span>, una formación que me ha permitido adentrarme en la industria del turismo y descubrir el valor de la hospitalidad. Sin embargo, mi verdadera pasión siempre ha sido la tecnología y el potencial ilimitado que ofrece. Mi amor por los viajes me ha llevado a soñar con una vida como <span class="remarcar">nómada digital</span>, un camino que me ha inspirado a sumergirme en el <span class="remarcar">mundo del desarrollo web</span>, mundo en el que espero seguir explorando y aprendiendo cada día más.</p>
             </div>
         </section>
         <section>
-            <h2>¿Por qué <span class="remarcar">Oh my Lorem!</span>?</h2>
-            <p class="parrafo">Durante mucho tiempo me he sentido atraída por la creación de contenido, pero nunca había llegado a una conclusión real sobre qué tema podría tratar. Cuando me comencé a adentrar en el mundo del aprendizaje del desarrollo web, me di cuenta que así como yo pueden haber muchas personas interesadas en cambiar de carrera a mitad del camino y con eso el giro completo de sus vidas. Ahí es cuando nace la idea de <span class="remarcar">Oh my Lorem!</span> donde busco que este nombre refleje completamente el asombro y el descubrimiento constante experimentado en cada cosa nueva que vas aprendiendo en este universo de creación digital, y a eso quería sumarle <span class="remarcar">"Lorem"</span> para representar el relleno de ese espacio en blanco que existía antes de comenzar a aprender sobre la programación de sitios web.
+            <h2 data-aos="fade-down">¿Por qué <span class="remarcar">Oh my Lorem!</span>?</h2>
+            <p class="parrafo" data-aos="fade-down-left">Durante mucho tiempo me he sentido atraída por la creación de contenido, pero nunca había llegado a una conclusión real sobre qué tema podría tratar. Cuando me comencé a adentrar en el mundo del aprendizaje del desarrollo web, me di cuenta que así como yo pueden haber muchas personas interesadas en cambiar de carrera a mitad del camino y con eso el giro completo de sus vidas. Ahí es cuando nace la idea de <span class="remarcar">Oh my Lorem!</span> donde busco que este nombre refleje completamente el asombro y el descubrimiento constante experimentado en cada cosa nueva que vas aprendiendo en este universo de creación digital, y a eso quería sumarle <span class="remarcar">"Lorem"</span> para representar el relleno de ese espacio en blanco que existía antes de comenzar a aprender sobre la programación de sitios web.
             La idea principal, es crear un espacio donde pueda ayudar a los desarrolladores del futuro que así como yo, sintieron miedo de dar el primer paso, y que sepan que a pesar de la frustración que muchas veces puedes llegar a sentir, <span class="remarcar">se puede lograr</span>.</p>
         </section>
     </main>
@@ -56,5 +64,9 @@
             <a href="https://github.com/darenye-w3b" target="_blank"><img src="./../assets/github-icon.svg" alt="Logo Github"></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

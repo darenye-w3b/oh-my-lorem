@@ -1,0 +1,50 @@
+/*Estilos de header*/
+header{
+    background-color: $color-principal;
+    @include flex(row, center, space-between);
+    padding: 8px;
+    img{
+        width: 153px;
+        height: 60px;
+        animation-name: logo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    nav{
+        ul{
+            list-style: none;
+            @include flex(row, center, space-between);
+            column-gap: 10px;
+            li{
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: $color-terciario;
+                    &:hover{
+                        color: $color-secundario;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &.header-afectado-por-bootstrap{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes logo{
+    50%{
+        transform: translateX(50px);
+    }
+}

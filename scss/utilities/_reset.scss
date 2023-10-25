@@ -1,0 +1,7 @@
+/*Reset*/
+*{
+    padding: map-get($layout-parameters , padding-reseteo);
+    margin: map-get($layout-parameters, margin-reseteo);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
