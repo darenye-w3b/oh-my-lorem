@@ -108,6 +108,29 @@ section .foto-index img {
   border-radius: 20px;
   border: 3px dotted #3693AC;
 }
+section .contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+section .contenedor-boton .boton-cv {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid white;
+  background-color: #3693AC;
+  color: white;
+  width: 200px;
+  height: 70px;
+  margin: 50px;
+}
+section .contenedor-boton .boton-cv:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3693AC;
+}
 
 /*Estilo Main Sobre Mi*/
 section .contenedor-aboutme {
@@ -161,8 +184,16 @@ section #carouselExample .carousel-inner .enlace-proyecto h3 {
 }
 
 /*Estilo Main Contacto*/
+section .parrafo-bootstrap {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
 section .contenedor-bootstrap {
   width: 600px;
+  margin-top: 20px;
 }
 section .contenedor-bootstrap div .etiqueta-contacto {
   color: white;

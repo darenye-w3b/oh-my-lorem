@@ -9,4 +9,24 @@ section{
             border: 3px dotted $color-secundario;
         }
         }
+    .contenedor-boton{
+        @include flex(row, center, center);
+        .boton-cv{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 15px;
+            border: 3px solid $color-terciario;
+            background-color: $color-secundario;
+            color: $color-terciario;
+            width: 200px;
+            height: 70px;
+            margin: 50px;
+            &:hover{
+                cursor: pointer;
+                background-color: $color-terciario;
+                color: $color-secundario;
+            }
+        }
+    }
 }
