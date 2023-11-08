@@ -22,7 +22,9 @@
 </head>
 <body>
     <header class="header-afectado-por-bootstrap">
-        <img src="./../assets/header.png" alt="Logo Oh my Lorem!">
+        <img  class="logo-pagina" src="./../assets/header.png" alt="Logo Oh my Lorem!">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img class="logo-hamburguesa" src="./../assets/menu-hamburguesa.svg" alt="Logo menú hamburguesa"></label>
         <nav>
             <ul>
                 <li>
@@ -47,7 +49,9 @@
     <main>
         <section>
             <h1 class="titulo-bootstrap" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500">Contáctame y <span class="remarcar">trabajemos juntos!</span></h1>
-            <p class="parrafo-bootstrap">Estoy emocionada por la oportunidad de colaborar contigo en <span class="remarcar">proyectos emocionantes y desafiantes</span>. Si tienes preguntas, ideas creativas o simplemente deseas discutir cómo podemos trabajar juntos, no dudes en ponerte en contacto. Estoy aquí para escucharte y responder a tus necesidades. ¡Espero con interés <span class="remarcar">conocer más sobre tu visión</span> y explorar cómo puedo contribuir a <span class="remarcar">hacerla realidad!</span></p>
+            <div class="contenedor-parrafo-bootstrap">  
+                <p class="parrafo-bootstrap">Estoy emocionada por la oportunidad de colaborar contigo en <span class="remarcar">proyectos emocionantes y desafiantes</span>. Si tienes preguntas, ideas creativas o simplemente deseas discutir cómo podemos trabajar juntos, no dudes en ponerte en contacto. Estoy aquí para escucharte y responder a tus necesidades. ¡Espero con interés <span class="remarcar">conocer más sobre tu visión</span> y explorar cómo puedo contribuir a <span class="remarcar">hacerla realidad!</span></p>
+            </div>
             <article class="container contenedor-bootstrap">
                 <div class="mb-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                     <label for="exampleFormControlInput1" class="form-label etiqueta-contacto">Tu correo</label>
@@ -57,7 +61,7 @@
                     <label for="exampleFormControlTextarea1" class="form-label etiqueta-contacto">Tu mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Hola! Me gustaría que trabajemos juntos porque considero que seríamos un buen equipo!"></textarea>
                 </div>
-                <div data-aos="zoom-in-down">
+                <div class="contenedor-boton-enviar" data-aos="zoom-in-down">
                     <input type="submit" value="Enviar" class="boton-enviar">
                 </div>
             </article>

@@ -1,22 +1,26 @@
 /*Estilo Main Contacto*/
 section{
-    .parrafo-bootstrap{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        text-align: map-get($layout-parameters, textalign-primario);
-        color: $color-terciario;
-        padding: 10px;
+    .contenedor-parrafo-bootstrap{
+        .parrafo-bootstrap{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            text-align: map-get($layout-parameters, textalign-primario);
+            color: $color-terciario;
+            padding: 10px;
+        }
     }
     .contenedor-bootstrap{
         width: 600px;
         margin-top: 20px;
-        div{
+        .mb-3{
             .etiqueta-contacto{
                 color: $color-terciario;
             }
         }
     }
-    div{
+    .contenedor-boton-enviar{
+        @include flex(row, center, center);
+        margin: 20px;
         .boton-enviar{
             background-color: $color-terciario;
             color: $color-principal;
@@ -26,6 +30,7 @@ section{
             padding: 10px 20px;
             margin-top: 10px;
             border-radius: 0px 30px;
+            border: none;
             &:hover{
                 color: $color-secundario;
                 border: 3px dotted $color-secundario;

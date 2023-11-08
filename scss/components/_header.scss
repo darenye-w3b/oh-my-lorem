@@ -11,6 +11,15 @@ header{
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
+    #btn-menu{
+        display: none;
+    }
+    label{
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
     nav{
         ul{
             list-style: none;

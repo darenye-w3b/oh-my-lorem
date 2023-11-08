@@ -68,6 +68,15 @@ header img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+header #btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+}
+header label:hover {
+  cursor: pointer;
+}
 header nav ul {
   list-style: none;
   display: flex;
@@ -184,7 +193,7 @@ section #carouselExample .carousel-inner .enlace-proyecto h3 {
 }
 
 /*Estilo Main Contacto*/
-section .parrafo-bootstrap {
+section .contenedor-parrafo-bootstrap .parrafo-bootstrap {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center;
@@ -195,10 +204,17 @@ section .contenedor-bootstrap {
   width: 600px;
   margin-top: 20px;
 }
-section .contenedor-bootstrap div .etiqueta-contacto {
+section .contenedor-bootstrap .mb-3 .etiqueta-contacto {
   color: white;
 }
-section div .boton-enviar {
+section .contenedor-boton-enviar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+section .contenedor-boton-enviar .boton-enviar {
   background-color: white;
   color: #010102;
   font-weight: bold;
@@ -207,8 +223,9 @@ section div .boton-enviar {
   padding: 10px 20px;
   margin-top: 10px;
   border-radius: 0px 30px;
+  border: none;
 }
-section div .boton-enviar:hover {
+section .contenedor-boton-enviar .boton-enviar:hover {
   color: #3693AC;
   border: 3px dotted #3693AC;
 }
@@ -232,10 +249,36 @@ footer div a img {
   /*Header*/
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+  }
+  header .logo-pagina {
+    animation: none;
+  }
+  header #btn-menu {
+    display: none;
+  }
+  header #btn-menu:checked + label + nav {
+    visibility: visible;
+    z-index: 1000;
+    width: 100%;
+  }
+  header label {
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+  header label .logo-hamburguesa {
+    width: 50px;
+    animation: none;
+  }
+  header nav {
+    position: absolute;
+    top: 100px;
+    background-color: #010102;
+    visibility: hidden;
   }
   header nav ul {
     flex-direction: column;

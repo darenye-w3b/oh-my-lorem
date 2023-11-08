@@ -2,9 +2,35 @@
 @media screen and (max-width: 768px){
 /*Header*/
 header{
-    @include flex(column, center, space-between);
+    @include flex(row, center, space-between);
     padding: map-get($layout-parameters, padding-primario);
+    .logo-pagina{
+        animation: none;
+    }
+    #btn-menu{
+        display: none;
+        &:checked + label{
+            & + nav{
+                visibility: visible;
+                z-index: 1000;
+                width: 100%;
+            }
+        }
+    }
+    label{
+        display: block;
+        position: relative;
+        right: 25px;
+        .logo-hamburguesa{
+            width: 50px;
+            animation: none;
+        }
+    }
     nav{
+        position: absolute;
+        top: 100px;
+        background-color: $color-principal;
+        visibility: hidden;
         ul{
             flex-direction: column;
             gap: 5px;
